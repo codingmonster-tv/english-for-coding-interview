@@ -1,268 +1,197 @@
 [Music]
 
-hi I'm Edgar and I'm a software engineer
+hi I'm Edgar and I'm a software engineer at Google
 
-at Google
+hi I'm Becky and I'm a software engineer at Google so Edgar the question 
 
-hi I'm Becky and I'm a software engineer
+I'm going to give you today is a I'm going to give you a collection of numbers and 
 
-at Google so Edgar the question I'm
+I need you to take this collection of numbers and find a matching pair that is equal to a sum that I give you as well
 
-going to give you today is a I'm going
+okay 
 
-to give you a collection of numbers and
+so for example the collection of numbers could be 1 2 3 & 9 and the sum that I'm looking for is 8 
 
-I need you to take this collection of
+okay 
 
-numbers and find a matching pair that is
+and then another example just for another set of numbers could be a 1 a 2 a 4 and a 4 and then again is some that I'm looking for is 8 
 
-equal to a sum that I give you as well
+so in this case there I guess what I'm trying to figure out is 
 
-okay so for example the collection of
+you're looking for a pair of numbers then that add up to 8 
 
-numbers could be 1 2 3 & 9 and the sum
+yeah right 
 
-that I'm looking for is 8 okay and then
+so in this case there isn't a pair of numbers that add up to it 
 
-another example just for another set of
+that is true in this example 
 
-numbers could be a 1 a 2 a 4 and a 4 and
+ok and in this case it is because the 4 and 4 add up to 8 
 
-then again is some that I'm looking for
+correct 
 
-is 8 so in this case there I guess what
+okay so this is, this would be like no, and this is yes ok?
 
-I'm trying to figure out is you're
+yes 
 
-looking for a pair of numbers then that
+okay so how are these numbers given? can I assume that they're kind like in memory an array or something?
 
-add up to 8 yeah right so in this case
+yeah they're in memory you can go with an array. you can also assume that they're ordered intending order 
 
-there isn't a pair of numbers that add
+ok, interesting okay 
 
-up to it that is true ok example and in
+so how about repeating elements can I assume that they would be like for instance here
 
-this case it is because the foreign for
+what if I didn't have that 4?
 
-add up to 8 correct okay so this is this
+could I use like the 4 and the 4 to get that 8?
 
-would be like no this is yes ok yes you
+you can't repeat the same element at the same index twice but certainly the same number may appear twice 
 
-ultimately happen okay so how are these
+ok ok so like that would be would be I yes 
 
-numbers given can I assume that they're
+how about these numbers? are they integers or are they floating point or.. 
 
-kind like in memory an array or
+you can assume they'll always be integers
 
-something yeah they're in memory you can
+ok negatives positives?
 
-go with an array you can also assume
+negatives can happen 
 
-that they're ordered intending water ok
+ok cool 
 
-Oh interesting okay so how about
+so well, the first the simplest solution of course is just comparing every single possible pair. 
 
-repeating elements can I assume that
+so I could just have two for loops, one scanning the whole thing and then the second one starting from 
 
-they would be like for instance here
+let's say you have the I loop and then the J loop starting from I plus one 
 
-what if I I guess but what if I didn't
+so that I don't repeat the same value 
 
-have that for what I use like the 4 and
+and just testing all of them if the sum is equal to the target sum 
 
-the 4 to get that 8 you can't repeat the
+I mean that's obviously not very efficient but that would be like a way to solve it 
 
-same element at the same index twice but
+that would work, it certainly would be time-consuming 
 
-certainly the same number may appear
+I think it is worse than optimic  solution 
 
-twice ok ok so like that would be would
+so any kind of example that yeah 
 
-be I yes how about these numbers are
+yeah I think that would be quadratic 
 
-they integers or are they floating point
+so better than quadratic,
 
-or you can assume they'll always be
+well since it's sorted it's okay 
 
-users ok negatives positives negatives
+I guess I need to figure out 
 
-can happen ok cool so well the first the
+when I have a number what I'm looking for is 
 
-simplest solution of course is just
+if there's another number that the sum is to 8 
 
-comparing every single possible pair so
+so if I have a 1, what I'd need to figure out is there's a 7 somewhere in the array 
+ 
+and that's the case it's sorted then I can just do binary search
 
-I could just have two for loops one
+I guess if I go here and I binary search for a 7
 
-scanning the whole thing and then the
+then I go here and I binary search for a 6 
 
-second one starting from let's say you
-
-have the I loop and then the J loop
-
-starting from I plus one so that I don't
-
-repeat the same value and just testing
-
-all of them if the sum is equal to the
-
-to the target sum I mean that's
-
-obviously not very efficient but that
-
-would be like a way to solve it that
-
-would work it certainly would be
-
-time-consuming I think yes so any kind
-
-of example that yeah yeah I think that
-
-that would be quadratic so better than
-
-quadratic
-
-well since it's sort it's okay I guess I
-
-need to figure out when I have a number
-
-what I'm looking for is if there's
-
-another number that sounds too 8 so so
-
-if I have a 1 what I'd need to figure
-
-out is if there's a 7 somewhere in the
-
-array and that's the case it's sorted
-
-then I can just do binary search I guess
-
-if I go here and I binary search for a 7
-
-then I go here and I binary search for a
-
-6 which is the complement of that and
+which is the complement of that and
 
 when I go here I binary search for a 5
 
 and at the end I just don't do anything
 
-and so in this case I would solve it
+and so in this case I would solve it like that 
 
-like that so that's a bit better than
+so that's a bit better than quadratic 
 
-quadratic I guess binary search is log
+I guess binary search is log algorithm in a sorted list
 
-algorithm in a sorted list
+also any answer  ok you're kind of slow
 
-also any answer ok you're kind of slow
+okay 
 
-okay so what if you took a look at
+so what if you took a look at, instead of doing a binary search which
 
-instead of doing a binary search which
+is unidirectional 
 
-is unidirectional what if you started
+what if you started with a pair of nembers to begin with then work your way through in
+ 
+work from there 
 
-with a pair of members to begin with
-
-okay and then work your way through in
-
-work from there let's see so it's right
+let's see so it's right
 
 okay let me try to bound this thing so
 
-the the largest possible some I guess
+the the largest possible sum I guess would be the last two values 
 
-would be the last two values that would
+that would be a largest possible Sum yeah 
 
-be a largest possible Sun yeah the
+the smallest possible sum would be the two smallest right 
 
-smallest possible Sun would be the two
+so anything in between, 
 
-smallest right so so anything in between
+Wow okay so the range of the possible values is that right?
 
-Wow okay so the range of the possible
+so there's nothing that is probably small,
 
-values is that right so there's nothing
+there's nothing that can be smaller than this value
 
-that is probably small there's nothing
+right 
 
-that can be smaller than this value
+there's nothing that can be larger than that value 
 
-right there's nothing that can be larger
+that's okay 
 
-than that value that's okay so if this
+so if this sum is 10 in this case, 
 
-sum is 10 in this case it's too large so
+it's too large so I need to find a smaller sum  
 
-I need to find a smaller sum so I could
+so I could just move this one over here 
 
-just move this one over here and if that
+and if that is too small now and 
 
-is too small now and I need to move that
+I need to move that one over there 
+ 
+okay so I think I can just do it with that in a linear solution 
 
-one over there okay so I can I think I
+just moving at each iteration I either move the high one lower if my pair is too large
 
-can just do it with with that in a in a
+and I move my lower higher if my pair is too small 
 
-linear solution just moving at each
+and I end whenever I either find two like in this case I need to find a pair that adds up to 8 or whenever they cross 
 
-iteration I either move the high one
+so every point I'm moving one of them 
 
-lower if I am if my pair is too large
+so they would have to at least cross and 
 
-and I move my lower higher if my pair is
+I move exactly one so that means that it's
 
-too small and I end whenever I either
+linear yeah so that 
 
-find two like in this case I need to
+that would be a way of solving that problem and 
 
-find a pair that adds up to eight or
+how does it make that faster than a binary search 
 
-whenever they cross so everybody every
-
-point I'm moving one of them so they
-
-would have to at least cross and I move
-
-exactly one so that means that it's
-
-linear yeah so that that would be a way
-
-of solving that problem and how does
-
-that how does it make that faster than a
-
-binary search okay so in the binary
-
-search case I was doing log or finding
-
-but I had to repeat that for every
-
-element that I was an N log and solution
+okay so in the binary search case I was doing log or finding but I had to repeat that for every element that I was an N log N solution
 
 in this case
 
-I just need to do that moving scanning
+I just need to do that moving scanning the one time so it's a linear solution so that's faster 
 
-the one time so it's a linear solution
+right okay
 
-so that's that's faster right right okay
+so before maybe you could get to coding it but we quit before we do that maybe
 
-so before maybe you could get to coding
+you could explain so if you explained it in a nonworking example maybe you have fallen through that same process and working 
 
-it but we quit before we do that maybe
+okay yeah so here
 
-you could explain so if you explained it
-
-in a nonworking example maybe you have
-
-fallen through that same process and
-
-working okay yeah so here I would start
-
-with this and that right so it's five is
+I would start with this and that right
+ so it's five is
 
 smaller than eight so I move this one
 
