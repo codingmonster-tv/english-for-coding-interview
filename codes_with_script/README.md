@@ -20,6 +20,22 @@ vector<int> spiralOrder(vector<vector<int> >& matrix) {
 
 `./{{Platform}}/{{ProblemTitle}}` 형식으로 디렉토리를 구성하는 것을 기본 규칙으로 하며, 해당 폴더 내에 코드 파일을 작성하면 됩니다.
 
+다만 같은 문제, 같은 언어여도 다양한 솔루션이 존재할 수 있습니다. 그렇기에 소스코드 파일의 이름은 개략적으로 어떤 풀이인지를 구분할 수 있게 작성해주는게 좋습니다.
+
+**예시** 
+
+```shell
+leetcode/
+  ㄴ 4. Median of Two sorted array/
+    ㄴ nlgn_solution.cpp
+    ㄴ nlglgn_binary_search.cpp
+    ㄴ nlgn_divide_and_conquer.cpp
+```
+
 ### LeetCode
 
-`/leetcode/{{ProblemTitle}}/{{codefile}}` 형식으로 솔루션을 공유하며, 이 때 `{{ProblemTitle}}`은 문제 번호를 포함한 전체 이름이 될 수 있도록 주의해주세요
+`/leetcode/{{ProblemTitle}}/{{codefile}}` 형식으로 솔루션을 공유하며, 이 때 `{{ProblemTitle}}`은 문제 번호를 포함한 전체 이름이 될 수 있도록 주의해주세요.
+
+예시
+- `leetcode/4. Median of Two sorted array`
+- `leetcode/54. Spiral Matrix`
