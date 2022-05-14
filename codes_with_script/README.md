@@ -32,8 +32,10 @@ leetcode/
 
 ### LeetCode
 
-`/leetcode/{{ProblemTitle}}/{{codefile}}` 형식으로 솔루션을 공유하며, 이 때 `{{ProblemTitle}}`은 문제 번호를 포함한 전체 이름이 될 수 있도록 주의해주세요.
+`/leetcode/{{ProblemTitle.extension}}` 형식으로 솔루션을 공유하며, 이 때 `{{ProblemTitle}}`은 문제 번호를 포함한 전체 이름이 될 수 있도록 주의해주세요.
 
 예시
 - `leetcode/4. Median of Two sorted array`
 - `leetcode/54. Spiral Matrix`
+
+### 기타(TODO)
