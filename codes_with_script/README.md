@@ -7,9 +7,9 @@
 ```C++
 vector<int> spiralOrder(vector<vector<int> >& matrix) {
     // I will save the number of rows and colums into two variables rows, cols  
-    int rows = matrix.size(); // first, let rows be the number of entire rows and get it from the size of first dimension 
+    int rows = matrix.size(); // first, let rows be the number of entire rows and get it from the size of first dimension of 2d-vector
     if(rows == 0) return {};  // and check the exceptional case that vector is empty 
-    int cols = matrix[0].size(); // second, let cols be the number of entire cols and get it from first vector's size 
+    int cols = matrix[0].size(); // second, let cols be the number of entire columns and get it from the size() of  first row vector 
     if(cols == 0) return {};  // and also check the case that the number of column is zero 
 
     // blar blar 
