@@ -1,5 +1,7 @@
 # How to: Work at Google — Example Coding/Engineering Interview
 
+It is WIP yet 
+
 ## Video 
 
 [![Watch the video](https://img.youtube.com/vi/XKu_SEDAykw/default.jpg)](https://youtu.be/XKu_SEDAykw)
