@@ -1,8 +1,14 @@
-[Music]
+# How to: Work at Google — Example Coding/Engineering Interview
 
-hi I'm Edgar and I'm a software engineer at Google
+## Video 
 
-hi I'm Becky and I'm a software engineer at Google so Edgar the question 
+[![Watch the video](https://img.youtube.com/vi/XKu_SEDAykw/default.jpg)](https://youtu.be/XKu_SEDAykw)
+
+## Script 
+
+> hi I'm Edgar and I'm a software engineer at Google
+
+> hi I'm Becky and I'm a software engineer at Google so Edgar the question 
 
 I'm going to give you today is a I'm going to give you a collection of numbers and 
 
