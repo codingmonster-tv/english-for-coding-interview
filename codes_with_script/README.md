@@ -15,3 +15,11 @@ vector<int> spiralOrder(vector<vector<int> >& matrix) {
     // blar blar 
 }       
 ```
+
+## Directory Convention 
+
+`./{{Platform}}/{{ProblemTitle}}` 형식으로 디렉토리를 구성하는 것을 기본 규칙으로 하며, 해당 폴더 내에 코드 파일을 작성하면 됩니다.
+
+### LeetCode
+
+`/leetcode/{{ProblemTitle}}/{{codefile}}` 형식으로 솔루션을 공유하며, 이 때 `{{ProblemTitle}}`은 문제 번호를 포함한 전체 이름이 될 수 있도록 주의해주세요
